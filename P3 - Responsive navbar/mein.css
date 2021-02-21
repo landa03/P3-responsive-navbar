@@ -1,0 +1,96 @@
+.logo {
+    max-height: 119px;
+}
+
+#nav-container {
+    display: flex;
+}
+
+body{
+    background-image: url(https://images.food52.com/HFd0L7m7cJKft9hs07Jlex_Jm14=/1328x1328/83a1390d-b255-4dcc-8272-38d59fa5f000--2019-0207_five-two_wooden-spoons_ultimate-kitchen-spoon-set_detail_silo_rocky-luten_087.jpg);
+}
+
+@media (min-width: 784px) {
+    
+    #nav-options {
+        display: grid;
+    }
+    
+    #nav-options a{
+        color: white;
+        background-color: black;
+        text-decoration: none;
+        padding: 50px 50px 50px 50px;
+        border-radius: 5px;
+        font-family: sans-serif;
+    }
+    
+    #nav-options :hover{
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .nav-option1 {
+        grid-column: 1;
+    }
+    
+    .nav-option2 {
+        grid-column: 2;
+    }
+    
+    .nav-option3 {
+        grid-column: 3;
+    }
+    
+    .nav-option4 {
+        grid-column: 4;
+    }
+
+    #ham-button{
+        display: none;
+    }
+
+    #ham-options {
+        display: none;
+        size: 0px;
+        color: rgba(255, 255, 255, 0);
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 784px) {
+    #nav-options {
+        display: none;
+    }
+    #ham-options {
+        display: grid;
+    }
+
+    #ham-options a{
+        color: white;
+        background-color: black;
+        text-decoration: none;
+        padding: 50px 50px 50px 50px;
+        border-radius: 5px;
+        font-family: sans-serif;
+    }
+    
+    #ham-options :hover{
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .ham-option1 {
+        grid-row: 1;
+    }
+    
+    .ham-option2 {
+        grid-row: 2;
+    }
+    
+    .ham-option3 {
+        grid-row: 3;
+    }
+    
+    .ham-option4 {
+        grid-row: 4;
+    }
+}
